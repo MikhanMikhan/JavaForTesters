@@ -39,8 +39,9 @@ public class ContactHelper extends HelperBase {
         click(By.name("selected[]"));
     }
     public void deleteContact(){
-        click(By.xpath("//input[@value=\\'Delete\\']"));
-    }//input[@value=\'Delete\
+        click(By.xpath("//input[@value=\'Delete\']"));
+        wd.switchTo().alert().accept();
+    }
     public void editContact(){
         click(By.xpath("(//img[@alt=\'Edit\'])[2]"));
     }
