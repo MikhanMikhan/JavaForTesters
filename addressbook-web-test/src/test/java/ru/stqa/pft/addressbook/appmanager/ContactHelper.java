@@ -14,7 +14,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void initContactCreation() {
-        click(By.linkText("add new"));
+        click(By.xpath("//a[contains(text(),\'add new\')]"));
     }
 
     public void fillContactForm(ContactCreationData contactCreationData) {
