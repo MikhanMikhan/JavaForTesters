@@ -19,7 +19,6 @@ public class ApplicationManager {
         contactHelper = new ContactHelper(wd);
         sessionHelper.login("admin", "secret");
 
-
     }
 
 
