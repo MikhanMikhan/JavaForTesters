@@ -2,6 +2,7 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 import ru.stqa.pft.addressbook.model.ContactCreationData;
 
 public class ContactHelper extends HelperBase {
@@ -23,27 +24,18 @@ public class ContactHelper extends HelperBase {
         type(By.name("middlename"), "Middlename");
         type(By.name("nickname"), "Nick");
         type(By.name("title"), "Title");
-        type(By.name("company"),"Company");
-        type(By.name("address"),"address");
-        type(By.name("home"),"Home");
-        type(By.name("mobile"),"7777777777");
-        type(By.name("work"),"Work");
-        type(By.name("email"),"Email@mail.com");
-        type(By.name("fax"),"Fax 556677");
-        type(By.name("email2"),"Mail@mail.com");
-        type(By.name("email3"),"Mail@mail.net");
-        type(By.name("homepage"),"localhost");
+        type(By.name("company"), "Company");
+        type(By.name("address"), "address");
+        type(By.name("home"), "Home");
+        type(By.name("mobile"), "7777777777");
+        type(By.name("work"), "Work");
+        type(By.name("email"), "Email@mail.com");
+        type(By.name("fax"), "Fax 556677");
+        type(By.name("email2"), "Mail@mail.com");
+        type(By.name("email3"), "Mail@mail.net");
+        type(By.name("homepage"), "localhost");
+        if (isElementPresent(By.name("new_group")))
+            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactCreationData.getGroup());
 
     }
-    public void selectContact(){
-        click(By.name("selected[]"));
-    }
-    public void deleteContact(){
-        click(By.xpath("//input[@value=\'Delete\']"));
-        wd.switchTo().alert().accept();
-    }
-    public void editContact(){
-        click(By.xpath("(//img[@alt=\'Edit\'])[2]"));
-    }
-
 }
