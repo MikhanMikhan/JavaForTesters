@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
 
@@ -27,6 +28,7 @@ public class ApplicationManager {
             } if (browser.equals(BrowserType.IE)) {
                 wd = new InternetExplorerDriver();
         }
+        wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/");
         groupHelper = new GroupHelper(wd);
         navigationHelper = new NavigationHelper(wd);
@@ -35,7 +37,6 @@ public class ApplicationManager {
         sessionHelper.login("admin", "secret");
 
     }
-
 
     public void stop() {
         wd.quit();
