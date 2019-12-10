@@ -44,16 +44,7 @@ public class HelperBase {
       }
     }
 
-        public void selectContact(){
-        click(By.name("selected[]"));
-    }
-    public void deleteContact(){
-        click(By.xpath("//input[@value=\'Delete\']"));
-        wd.switchTo().alert().accept();
-    }
-    public void editContact(){
-        click(By.xpath("(//img[@alt=\'Edit\'])[2]"));
-    }
+
 
 }
 

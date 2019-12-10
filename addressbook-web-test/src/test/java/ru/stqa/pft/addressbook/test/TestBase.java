@@ -7,12 +7,12 @@ import ru.stqa.pft.addressbook.appmanager.ApplicationManager;
 
 public class TestBase {
 
-    protected final ApplicationManager app = new ApplicationManager(BrowserType.FIREFOX);
+    protected final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
     @BeforeMethod
     public void setUp() throws Exception {
-//        System.setProperty("webdriver.chrome.driver", "D:\\javafortesters\\JavaForTesters\\chromedriver.exe");
-//        System.setProperty("webdriver.gecko.driver", "D:\\javafortesters\\JavaForTesters\\geckodriver.exe");
+        System.setProperty("webdriver.chrome.driver", "D:\\javafortesters\\JavaForTesters\\chromedriver.exe");
+        System.setProperty("webdriver.gecko.driver", "D:\\javafortesters\\JavaForTesters\\geckodriver.exe");
         app.init();
 
     }
