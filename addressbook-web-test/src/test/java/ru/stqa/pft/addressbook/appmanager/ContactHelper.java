@@ -32,21 +32,21 @@ public class ContactHelper extends HelperBase {
     }
 
     public void fillContactForm(ContactData contactCreationData, boolean creation) {
-        type(By.name("firstname"), "Name");
-        type(By.name("lastname"), "Lastname");
-        type(By.name("middlename"), "Middlename");
-        type(By.name("nickname"), "Nick");
-        type(By.name("title"), "Title");
-        type(By.name("company"), "Company");
-        type(By.name("address"), "address");
-        type(By.name("home"), "Home");
-        type(By.name("mobile"), "7777777777");
-        type(By.name("work"), "Work");
-        type(By.name("email"), "Email@mail.com");
-        type(By.name("fax"), "Fax 556677");
-        type(By.name("email2"), "Mail@mail.com");
-        type(By.name("email3"), "Mail@mail.net");
-        type(By.name("homepage"), "localhost");
+        type(By.name("firstname"),contactCreationData.getFirstname());
+        type(By.name("lastname"), contactCreationData.getLastname());
+        type(By.name("middlename"), contactCreationData.getMiddlename());
+//        type(By.name("nickname"), "Nick");
+//        type(By.name("title"), "Title");
+//        type(By.name("company"), "Company");
+//        type(By.name("address"), "address");
+//        type(By.name("home"), "Home");
+//        type(By.name("mobile"), "7777777777");
+//        type(By.name("work"), "Work");
+//        type(By.name("email"), "Email@mail.com");
+//        type(By.name("fax"), "Fax 556677");
+//        type(By.name("email2"), "Mail@mail.com");
+//        type(By.name("email3"), "Mail@mail.net");
+//        type(By.name("homepage"), "localhost");
         if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactCreationData.getGroup());
         } else {
