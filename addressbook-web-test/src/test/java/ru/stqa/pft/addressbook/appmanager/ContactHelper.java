@@ -19,20 +19,22 @@ public class ContactHelper extends HelperBase {
         click(By.xpath("//a[contains(text(),\'add new\')]"));
     }
 
-    public void submitContactEdit() { click(By.name("update"));}
-
-    public boolean isThereAContact() {
-        return(isElementPresent(By.name("selected[]")));
+    public void submitContactEdit() {
+        click(By.name("update"));
     }
 
-    public void contactCreation(ContactData contact){
+    public boolean isThereAContact() {
+        return (isElementPresent(By.name("selected[]")));
+    }
+
+    public void contactCreation(ContactData contact) {
         initContactCreation();
         fillContactForm(contact, true);
         submitContactCreation();
     }
 
     public void fillContactForm(ContactData contactCreationData, boolean creation) {
-        type(By.name("firstname"),contactCreationData.getFirstname());
+        type(By.name("firstname"), contactCreationData.getFirstname());
         type(By.name("lastname"), contactCreationData.getLastname());
         type(By.name("middlename"), contactCreationData.getMiddlename());
 //        type(By.name("nickname"), "Nick");
@@ -48,21 +50,25 @@ public class ContactHelper extends HelperBase {
 //        type(By.name("email3"), "Mail@mail.net");
 //        type(By.name("homepage"), "localhost");
         if (creation) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactCreationData.getGroup());
+            if (contactCreationData.getGroup() != null) {
+                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactCreationData.getGroup());
+            }
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
 
         }
     }
 
-    public void selectContact(){
+    public void selectContact() {
         click(By.name("selected[]"));
     }
-    public void deleteContact(){
+
+    public void deleteContact() {
         click(By.xpath("//input[@value=\'Delete\']"));
         wd.switchTo().alert().accept();
     }
-    public void editContact(){
+
+    public void editContact() {
         click(By.xpath("(//img[@alt=\'Edit\'])[2]"));
     }
 }
