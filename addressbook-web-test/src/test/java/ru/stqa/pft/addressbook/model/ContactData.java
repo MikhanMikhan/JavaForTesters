@@ -4,7 +4,7 @@ public class ContactData {
     private final String firstname;
     private final String lastname;
     private final String middlename;
-//    private final String nickname;
+    //    private final String nickname;
 //    private final String title;
 //    private final String company;
 //    private final String address;
@@ -17,6 +17,7 @@ public class ContactData {
 //    private final String email3;
 //    private final String homepage;
     private final String group;
+    private int id;
 
     public ContactData(String firstname, String lastname, String middlename, String group) {
         this.group = group;
@@ -95,6 +96,8 @@ public class ContactData {
 //
 //    public String getHomepage() { return homepage; }
 
-    public String getGroup() { return group;}
+    public String getGroup() {
+        return group;
+    }
 }
 
