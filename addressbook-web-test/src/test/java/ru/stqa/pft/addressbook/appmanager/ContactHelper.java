@@ -6,7 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Contacts;
+
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 public class ContactHelper extends HelperBase {
@@ -72,7 +75,7 @@ public class ContactHelper extends HelperBase {
     }
 
     public void editContact() {
-        click(By.xpath("(//img[@alt=\'Edit\'])[2]"));
+        click(By.xpath("(//img[@alt=\'Edit\'])"));
     }
 
     public void modify(ContactData contact) {
@@ -84,6 +87,21 @@ public class ContactHelper extends HelperBase {
 
     public List<ContactData> list() {
         List<ContactData> contacts = new ArrayList<ContactData>();
+        List<WebElement> elements = wd.findElements(By.name("entry"));
+
+        for (WebElement element : elements) {
+            List<WebElement> cells = element.findElements(By.tagName("td"));
+            String firstName = cells.get(2).getText();
+            String lastName = cells.get(1).getText();
+            String id = element.findElement(By.tagName("input")).getAttribute("value");
+            ContactData contact = new ContactData().withFirstname(firstName).withLastname(lastName);
+            contacts.add(contact);
+        }
+        return contacts;
+    }
+
+    public Contacts all() {
+        Contacts contacts = new Contacts();
         List<WebElement> elements = wd.findElements(By.name("entry"));
 
         for (WebElement element : elements) {

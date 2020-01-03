@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.Comparator;
 import java.util.List;
@@ -19,17 +20,16 @@ public class GroupModificationTest extends TestBase {
 
     @Test
     public void testGroupModification() {
-        List<GroupData> before = app.group().list();
-        int index = before.size() - 1;
+        Groups before = app.group().all();
+        GroupData modifiedGroup = before.iterator().next();
+
         GroupData group = new GroupData().withName("test1").withFooter("EditFooter").withHeader("EditGroup1-header").withId((before.get(index).getId()));
         app.group().modify(index, group);
-        List<GroupData> after = app.group().list();
+        Groups after = app.group().all();
         Assert.assertEquals(before.size(), after.size());
         before.remove(index);
         before.add(group);
         Comparator<? super GroupData> byId = (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
-        before.sort(byId);
-        after.sort(byId);
         Assert.assertEquals(before, after);
     }
 
