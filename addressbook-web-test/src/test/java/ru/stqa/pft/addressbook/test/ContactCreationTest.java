@@ -1,6 +1,4 @@
 package ru.stqa.pft.addressbook.test;
-
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
@@ -17,7 +15,7 @@ public class ContactCreationTest extends TestBase {
         app.contact().create(contact);
         app.goTo().homePage();
         Contacts after = app.contact().all();
-        Assert.assertEquals(after.size(), before.size() + 1);
+        assertThat(after.size(), equalTo(before.size() + 1));
         assertThat(after, equalTo(before.withAdded(contact.withId
                 (after.stream().mapToInt((g) -> g.getId()).max().getAsInt()))));
     }

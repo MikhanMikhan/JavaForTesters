@@ -5,8 +5,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
-
-import java.util.Comparator;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.*;
 
@@ -24,9 +22,8 @@ public class GroupDeletionTest extends TestBase {
         GroupData deletedGroup = before.iterator().next();
         app.group().delete(deletedGroup);
         Groups after = app.group().all();
-        Assert.assertEquals(before.size(), after.size() + 1);
-        Comparator<? super GroupData> byId = (o1, o2) -> Integer.compare(o1.getId(), o2.getId());
-        assertThat(before, equalTo(before.without(deletedGroup)));
+        assertThat(before.size(), equalTo(after.size() + 1));
+        assertThat(after, equalTo(before.without(deletedGroup)));
     }
 
 
