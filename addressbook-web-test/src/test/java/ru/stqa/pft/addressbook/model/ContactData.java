@@ -21,6 +21,7 @@ public class ContactData {
     private String group;
     private int id = Integer.MAX_VALUE;
     private String allPhones;
+    private String allEmails;
 
 
     public String getFirstname() {
@@ -212,6 +213,15 @@ public class ContactData {
 
     public ContactData withAllPhones(String allPhones) {
         this.allPhones = allPhones;
+        return this;
+    }
+
+    public String getAllEmails() {
+        return allEmails;
+    }
+
+    public ContactData withAllEmails(String allEmails) {
+        this.allEmails = allEmails;
         return this;
     }
 }
