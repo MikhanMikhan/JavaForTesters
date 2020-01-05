@@ -20,6 +20,7 @@ public class ContactData {
     private String homepage;
     private String group;
     private int id = Integer.MAX_VALUE;
+    private String allPhones;
 
 
     public String getFirstname() {
@@ -50,15 +51,15 @@ public class ContactData {
         return address;
     }
 
-    public String getHome() {
+    public String getHomePhone() {
         return home;
     }
 
-    public String getMobile() {
+    public String getMobilePhone() {
         return mobile;
     }
 
-    public String getWork() {
+    public String getWorkPhone() {
         return work;
     }
 
@@ -117,17 +118,17 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withHome(String home) {
+    public ContactData withHomePhone(String home) {
         this.home = home;
         return this;
     }
 
-    public ContactData withMobile(String mobile) {
+    public ContactData withMobilePhone(String mobile) {
         this.mobile = mobile;
         return this;
     }
 
-    public ContactData withWork(String work) {
+    public ContactData withWorkPhone(String work) {
         this.work = work;
         return this;
     }
@@ -203,6 +204,15 @@ public class ContactData {
 
     public int getId() {
         return id;
+    }
+
+    public String getAllPhones() {
+        return allPhones;
+    }
+
+    public ContactData withAllPhones(String allPhones) {
+        this.allPhones = allPhones;
+        return this;
     }
 }
 

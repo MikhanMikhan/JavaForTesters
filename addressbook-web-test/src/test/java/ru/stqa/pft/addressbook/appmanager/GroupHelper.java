@@ -38,7 +38,7 @@ public class GroupHelper extends HelperBase {
         wd.findElements(By.name("selected[]")).get(index).click();
     }
     public void selectGroupById(int id) {
-        wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
+        wd.findElement(By.cssSelector(String.format("input[value='%s']", id))).click();
     }
 
     public void deleteGroup() {
@@ -66,7 +66,7 @@ public class GroupHelper extends HelperBase {
         return (isElementPresent(By.name("selected[]")));
     }
 
-    public int getGroupCount() {
+    public int count () {
         return wd.findElements(By.name("selected[]")).size();
     }
 
