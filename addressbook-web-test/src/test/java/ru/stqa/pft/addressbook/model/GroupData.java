@@ -1,11 +1,19 @@
 package ru.stqa.pft.addressbook.model;
 
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import java.util.Objects;
 
 public class GroupData {
+    @Expose
     private String name;
+    @Expose
     private String header;
+    @Expose
     private String footer;
+    @XStreamOmitField
+    private int id = Integer.MAX_VALUE;
 
     @Override
     public boolean equals(Object o) {
@@ -21,7 +29,7 @@ public class GroupData {
         return Objects.hash(name, id);
     }
 
-    private int id = Integer.MAX_VALUE;
+
 
     public int getId() {
         return id;
