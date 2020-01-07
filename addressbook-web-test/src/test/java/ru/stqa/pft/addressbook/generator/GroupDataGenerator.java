@@ -28,7 +28,7 @@ public class GroupDataGenerator {
 
     public static void main(String[] args) throws IOException {
         GroupDataGenerator generator = new GroupDataGenerator();
-        JCommander jCommander = new JCommander();
+        JCommander jCommander = new JCommander(generator);
         try {
             jCommander.parse(args);
         } catch (ParameterException ex) {
@@ -70,7 +70,7 @@ public class GroupDataGenerator {
     }
 
     private void saveAsJson(List<GroupData> groups, File file) throws IOException {
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
         String json = gson.toJson(groups);
         Writer writer = new FileWriter(file);
         writer.write(json);
