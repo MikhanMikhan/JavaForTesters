@@ -60,7 +60,7 @@ public class ContactDataGenerator {
 
     private void saveAsXml(List<ContactData> contacts, File file) throws IOException {
         XStream xstream = new XStream();
-        // xstream.alias("group", GroupData.class);
+//         xstream.alias("group", GroupData.class);
         xstream.processAnnotations(ContactData.class);
         String xml = xstream.toXML(contacts);
         Writer writer = new FileWriter(file);
@@ -83,11 +83,11 @@ public class ContactDataGenerator {
         List<ContactData> contacts = new ArrayList<ContactData>();
         for (int i = 0; i < count; i++) {
             contacts.add(new ContactData().withFirstname(String.format("firstname %s", i))
-                    .withLastname(String.format("lastname %s", i)).withAddress(String.format("address %s", i))
-                    .withHomePhone(String.format("homephone %s", i)).
-                            withMobilePhone(String.format("mobilephone %s", i)).withWorkPhone(String.format("workphone %s", i)).
-                            withEmail(String.format("email %s", i)).withEmail2(String.format("email2 %s", i)).
-                            withEmail3(String.format("email3 %s", i)));
+                    .withLastname(String.format("lastname %s", i)).withAddress(String.format("ulica dom %s", i))
+                    .withHomePhone(String.format("7800555353 %s", i)).
+                            withMobilePhone(String.format("7800555353 %s", i)).withWorkPhone(String.format("7800555353 %s", i)).
+                            withEmail(String.format("email@ %s", i)).withEmail2(String.format("email2@ %s", i)).
+                            withEmail3(String.format("email3@ %s", i)));
         }
         return contacts;
     }
