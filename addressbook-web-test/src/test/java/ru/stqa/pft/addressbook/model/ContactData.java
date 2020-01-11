@@ -2,9 +2,21 @@ package ru.stqa.pft.addressbook.model;
 
 import com.google.gson.annotations.Expose;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
+@Entity
+@Table(name = "addressbook")
 public class ContactData {
+    @Expose
+    @Id
+    @Column(name = "id")
+    private int id = Integer.MAX_VALUE;
     @Expose
     private String firstname;
     @Expose
@@ -32,9 +44,11 @@ public class ContactData {
     private String email3;
     private String homepage;
     private String group;
-    private int id = Integer.MAX_VALUE;
+
     private String allPhones;
     private String allEmails;
+
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
 
     public String getFirstname() {
@@ -237,5 +251,9 @@ public class ContactData {
         this.allEmails = allEmails;
         return this;
     }
+
+//    public Groups getGroups() {
+//        return new Groups(groups);
+//    }
 }
 

@@ -1,35 +1,45 @@
 package ru.stqa.pft.addressbook.model;
 
 import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
+import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
+@XStreamAlias("group")
+@Entity
+@Table(name ="group_list")
 public class GroupData {
-    @Expose
-    private String name;
-    @Expose
-    private String header;
-    @Expose
-    private String footer;
     @XStreamOmitField
+    @Id
+    @Column(name="group_id")
     private int id = Integer.MAX_VALUE;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        GroupData groupData = (GroupData) o;
-        return id == groupData.id &&
-                Objects.equals(name, groupData.name);
-    }
+    @Expose
+    @Column(name="group_name")
+    private String name;
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, id);
-    }
+//    public Contacts getContacts() {
+//        return new Contacts(contacts);
+//    }
+
+//    @ManyToMany(mappedBy = "groups")
+//    private Set<ContactData> contacts = new HashSet<ContactData>();
 
 
+    @Expose
+    @Column(name="group_header")
+    @Type(type = "text")
+    private String header;
+
+    @Expose
+    @Column(name="group_footer")
+    @Type(type = "text")
+    private String footer;
 
     public int getId() {
         return id;
@@ -46,7 +56,6 @@ public class GroupData {
     public String getFooter() {
         return footer;
     }
-
 
     public GroupData withId(int id) {
         this.id = id;
@@ -68,12 +77,25 @@ public class GroupData {
         return this;
     }
 
-
     @Override
     public String toString() {
         return "GroupData{" +
                 "name='" + name + '\'' +
                 ", id=" + id +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GroupData groupData = (GroupData) o;
+        return id == groupData.id &&
+                Objects.equals(name, groupData.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, id);
     }
 }
