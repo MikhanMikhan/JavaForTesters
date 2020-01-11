@@ -18,38 +18,46 @@ public class ContactData {
     @Column(name = "id")
     private int id = Integer.MAX_VALUE;
     @Expose
+    @Column(name = "firstname")
     private String firstname;
     @Expose
+    @Column(name = "lastname")
     private String lastname;
     @Expose
+    @Column(name = "middlename")
     private String middlename;
     private String nickname;
     private String title;
     private String company;
     @Expose
+    @Column(name = "address")
     private String address;
     @Expose
+    @Column(name = "home")
     private String home;
     @Expose
+    @Column(name = "mobile")
     private String mobile;
     @Expose
+    @Column(name = "work")
     private String work;
+
     @Expose
     private String email;
-
-    private String fax;
     @Expose
     private String email2;
     @Expose
     private String email3;
     private String homepage;
     private String group;
+    private String fax;
 
     private String allPhones;
     private String allEmails;
 
     private Set<GroupData> groups = new HashSet<GroupData>();
 
+//        public Groups getGroups() { return new Groups(groups);}
 
     public String getFirstname() {
         return firstname;
@@ -251,9 +259,5 @@ public class ContactData {
         this.allEmails = allEmails;
         return this;
     }
-
-//    public Groups getGroups() {
-//        return new Groups(groups);
-//    }
 }
 
