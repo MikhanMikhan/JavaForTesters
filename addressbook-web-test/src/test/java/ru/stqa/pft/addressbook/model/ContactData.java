@@ -24,7 +24,7 @@ public class ContactData {
     @Expose
     @Column(name = "middlename")
     private String middlename;
-//    private String nickname;
+    //    private String nickname;
 //    private String title;
 //    private String company;
     @Expose
@@ -52,6 +52,16 @@ public class ContactData {
     @Column(name = "email2")
     @Type(type = "text")
     private String email2;
+    @Expose
+    @Column(name = "email3")
+    @Type(type = "text")
+    private String email3;
+
+
+    @Transient
+    private String allPhones;
+    @Transient
+    private String allEmails;
 
     @Override
     public boolean equals(Object o) {
@@ -61,43 +71,23 @@ public class ContactData {
         return id == that.id &&
                 Objects.equals(firstname, that.firstname) &&
                 Objects.equals(lastname, that.lastname) &&
-                Objects.equals(middlename, that.middlename) &&
-                Objects.equals(address, that.address) &&
-                Objects.equals(home, that.home) &&
-                Objects.equals(mobile, that.mobile) &&
-                Objects.equals(work, that.work) &&
-                Objects.equals(email, that.email) &&
-                Objects.equals(email2, that.email2) &&
-                Objects.equals(email3, that.email3) &&
-                Objects.equals(group, that.group) &&
-                Objects.equals(allPhones, that.allPhones) &&
-                Objects.equals(allEmails, that.allEmails);
+                Objects.equals(middlename, that.middlename);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, lastname, middlename, address, home, mobile, work, email, email2, email3, group, allPhones, allEmails);
+        return Objects.hash(id, firstname, lastname, middlename);
     }
 
-    @Expose
-    @Column(name = "email3")
-    @Type(type = "text")
-    private String email3;
-//    @Expose
-//    @Column(name = "homepage")
-//    private String homepage;
+    @ManyToMany(fetch =FetchType.EAGER)
+    @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"),
+            inverseJoinColumns =@JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
-    @Transient
-    private String group;
-//    private String fax;
-    @Transient
-    private String allPhones;
-    @Transient
-    private String allEmails;
 
-//    private Set<GroupData> groups = new HashSet<GroupData>();
-
-//        public Groups getGroups() { return new Groups(groups);}
+    public Groups getGroups() {
+        return new Groups( groups);
+    }
 
     public String getFirstname() {
         return firstname;
@@ -142,10 +132,6 @@ public class ContactData {
     public String getEmail() {
         return email;
     }
-
-//    public String getFax() {
-//        return fax;
-//    }
 
     public String getEmail2() {
         return email2;
@@ -234,13 +220,8 @@ public class ContactData {
 //        return this;
 //    }
 
-    public ContactData withGroup(String group) {
-        this.group = group;
-        return this;
-    }
-
-    public String getGroup() {
-        return group;
+    public Groups getGroup() {
+        return new Groups(groups);
     }
 
     public void setId(int id) {
@@ -253,7 +234,6 @@ public class ContactData {
                 "firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", middlename='" + middlename + '\'' +
-                ", group='" + group + '\'' +
                 ", id=" + id +
                 '}';
     }
@@ -282,6 +262,11 @@ public class ContactData {
 
     public ContactData withAllEmails(String allEmails) {
         this.allEmails = allEmails;
+        return this;
+    }
+
+    public ContactData inGroup(GroupData group){
+        groups.add(group);
         return this;
     }
 }

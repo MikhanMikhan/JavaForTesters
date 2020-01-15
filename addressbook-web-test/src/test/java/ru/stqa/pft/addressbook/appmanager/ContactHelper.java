@@ -61,13 +61,13 @@ public class ContactHelper extends HelperBase {
 
 
         if (creation) {
-            if (contactCreationData.getGroup() != null) {
-                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactCreationData.getGroup());
-            }
+            if (contactCreationData.getGroups().size()>0){
+                Assert.assertTrue(contactCreationData.getGroups().size()==1);
+                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactCreationData.getGroups().iterator().next().getName());}
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
-
         }
+
     }
 
     public void selectContact() {
@@ -160,5 +160,29 @@ public class ContactHelper extends HelperBase {
         WebElement row = checkbox.findElement(By.xpath("./../.."));
         List<WebElement> cells = row.findElements(By.tagName("td"));
         cells.get(7).findElement(By.tagName("a")).click();
+    }
+
+    private void addToGroup(String name) {
+        new Select(wd.findElement(By.name("to_group"))).
+                selectByVisibleText(name);
+        click(By.name("add"));
+    }
+
+    private void removeFromGroup(ContactData contact, int id) {
+        wd.findElement(By.name("group")).click();
+        click(By.cssSelector("option[value='"+id+"']"));
+        selectContactById(contact.getId());
+        click(By.name("remove"));
+    }
+
+    public void addContactToGroup(ContactData contact, String group) {
+        selectContactById(contact.getId());
+        addToGroup(group);
+
+    }
+
+    public void removeContactFromGroup(ContactData contact, int id) {
+        removeFromGroup(contact,id);
+
     }
 }
