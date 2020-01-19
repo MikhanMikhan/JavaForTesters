@@ -46,12 +46,13 @@ public class ContactHelper extends HelperBase {
         type(By.name("firstname"), contactCreationData.getFirstname());
         type(By.name("lastname"), contactCreationData.getLastname());
         type(By.name("middlename"), contactCreationData.getMiddlename());
-        type(By.name("address"), "address");
-        type(By.name("home"), "Home");
-        type(By.name("mobile"), "7777777777");
-        type(By.name("email"), "Email@mail.com");
-        type(By.name("email2"), "Mail@mail.com");
-        type(By.name("email3"), "Mail@mail.net");
+        type(By.name("address"), contactCreationData.getAddress());
+        type(By.name("home"), contactCreationData.getHomePhone());
+        type(By.name("work"), contactCreationData.getWorkPhone());
+        type(By.name("mobile"), contactCreationData.getMobilePhone());
+        type(By.name("email"), contactCreationData.getEmail());
+        type(By.name("email2"), contactCreationData.getEmail2());
+        type(By.name("email3"), contactCreationData.getEmail3());
 //        type(By.name("homepage"), "localhost");
 //        type(By.name("nickname"), "Nick");
 //        type(By.name("title"), "Title");
@@ -85,7 +86,7 @@ public class ContactHelper extends HelperBase {
 
     public void modify(ContactData contact) {
         initEditContactById(contact.getId());
-        fillContactForm((contact), false);
+        fillContactForm(contact, false);
         submitContactEdit();
         returnToHomePage();
     }
