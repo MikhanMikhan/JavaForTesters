@@ -28,17 +28,17 @@ public class TestBase {
         System.setProperty("webdriver.chrome.driver", "D:\\javafortesters\\JavaForTesters\\chromedriver.exe");
         System.setProperty("webdriver.gecko.driver", "D:\\javafortesters\\JavaForTesters\\geckodriver.exe");
         app.init();
-        app.ftp().upload(
-                new File("src/test/resources/config_inc.php"),
-                "config_inc.php",
-                "config_inc.php.bak"
-        );
+//        app.ftp().upload(
+//                new File("src/test/resources/config_inc.php"),
+//                "config_inc.php",
+//                "config_inc.php.bak"
+//        );
     }
 
 
     @AfterSuite
     public void tearDown() throws IOException {
-        app.ftp().restore("config_inc.php.bak", "config_inc.php");
+//        app.ftp().restore("config_inc.php.bak", "config_inc.php");
         app.stop();
     }
 
