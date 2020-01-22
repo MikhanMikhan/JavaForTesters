@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.MatchResult;
 
 public class ApplicationManager {
     private final Properties properties;
@@ -18,6 +19,73 @@ public class ApplicationManager {
 
     private WebDriver wd;
     private String browser;
+    private RegistrationHelper registrationHelper;
+
+    private FtpHelper ftp;
+    private MailHelper mailHelper;
+    private JamesHelper jamesHelper;
+    private DbHelper dbHelper;
+    private NavigationHelper navigationHelper;
+    private PasswordChangeHelper passwordChange;
+    private SoapHelper soapHelper;
+
+    private void gotoUrl(String homePageUrl) {
+        wd.get(homePageUrl);
+    }
+
+
+    public String getProperty(String key) {
+        return properties.getProperty(key);
+    }
+
+    public FtpHelper ftp() {
+        if (ftp == null) {
+            ftp = new FtpHelper(this);
+        }
+        return ftp;
+    }
+
+    public MailHelper mail() {
+        if (mailHelper == null) {
+            mailHelper = new MailHelper(this);
+        }
+        return mailHelper;
+    }
+
+    public JamesHelper james() {
+        if (jamesHelper == null) {
+            jamesHelper = new JamesHelper(this);
+        }
+        return jamesHelper;
+    }
+
+    public DbHelper db() {
+        if (dbHelper == null) {
+            dbHelper = new DbHelper(this);
+        }
+        return dbHelper;
+    }
+
+    public NavigationHelper goTo() {
+        if (navigationHelper == null) {
+            navigationHelper = new NavigationHelper(this);
+        }
+        return navigationHelper;
+    }
+
+    public PasswordChangeHelper passwordChange() {
+        if (passwordChange == null) {
+            passwordChange = new PasswordChangeHelper(this);
+        }
+        return passwordChange;
+    }
+
+    public SoapHelper soap() {
+        if (soapHelper == null) {
+            soapHelper = new SoapHelper(this);
+        }
+        return soapHelper;
+    }
 
 
     public ApplicationManager(String browser) {
@@ -29,24 +97,40 @@ public class ApplicationManager {
         String target = System.getProperty("target", "local");
         properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
 
-        if (browser.equals(BrowserType.FIREFOX)) {
-            wd = new FirefoxDriver();
-        } else if (browser.equals(BrowserType.CHROME)) {
-            wd = new ChromeDriver();
-        }
-        if (browser.equals(BrowserType.IE)) {
-            wd = new InternetExplorerDriver();
-        }
-        wd.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
-        wd.get(properties.getProperty("web.baseUrl", "http://localhost/addressbook/"));
 
     }
 
     public void stop() {
-        wd.quit();
+        if (wd != null) {
+            wd.quit();
+        }
     }
 
     public HttpSession newSession() {
         return new HttpSession(this);
+    }
+
+    public RegistrationHelper registration() {
+        if (registrationHelper == null) {
+            registrationHelper = new RegistrationHelper(this);
+        }
+        return registrationHelper;
+    }
+
+    public WebDriver getDriver() {
+        if (wd == null) {
+            if (browser.equals(BrowserType.FIREFOX)) {
+                wd = new FirefoxDriver();
+            } else if (browser.equals(BrowserType.CHROME)) {
+                wd = new ChromeDriver();
+            }
+            if (browser.equals(BrowserType.IE)) {
+                wd = new InternetExplorerDriver();
+            }
+            wd.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
+            wd.get(properties.getProperty("web.baseUrl", "http://localhost/addressbook/"));
+
+        }
+        return wd;
     }
 }

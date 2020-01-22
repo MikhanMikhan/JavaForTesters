@@ -97,7 +97,7 @@ public class ContactHelper extends HelperBase {
         returnToHomePage();
     }
 
-    private void selectContactById(int id) {
+    public void selectContactById(int id) {
         wd.findElement(By.cssSelector("input[value='" + id + "']")).click();
     }
 
@@ -182,8 +182,16 @@ public class ContactHelper extends HelperBase {
 
     }
 
-    public void removeContactFromGroup(ContactData contact, int id) {
-        removeFromGroup(contact,id);
+    public void removeContactFromGroup(){
+        click(By.name("remove"));
+        }
 
+    public void addToGroupById(int id) {
+        new Select(wd.findElement(By.name("to_group"))).selectByValue(String.valueOf(id));
+        click(By.name("add"));
+        }
+
+    public void filterContactsByGroupId(int id) {
+        new Select(wd.findElement(By.name("group"))).selectByValue(String.valueOf(id));
     }
 }

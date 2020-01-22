@@ -14,66 +14,65 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactRemoveFromGroupTest extends TestBase {
 
+    Random random = new Random();
+    int g = random.nextInt();
+    private int contactId;
+    private int groupId;
+    private boolean contactInGroupIsFound = false;
+
     @BeforeMethod
     public void ensurePreconditions() {
-        Random random = new Random();
-        int g = random.nextInt();
         Groups groups = app.db().groups();
         Contacts contacts = app.db().contacts();
-        if (contacts.size() == 0) {
-            app.goTo().homePage();
-            app.contact().create(new ContactData().withFirstname("Name").withLastname("LastName").
-                    withMobilePhone("+78005553535").withEmail("1@mail.com").withMiddlename("Petrovich").
-                    withAddress("ulica").withEmail2("email2").withEmail3("email3").
-                    withHomePhone("homephone").withWorkPhone("workphone"));
-        }
-        ContactData contact = app.db().contacts().iterator().next();
         if (groups.size() == 0) {
             app.goTo().groupPage();
-            app.group().create(new GroupData().withName(String.format("group%s",g)).withHeader("header").withFooter("footer"));
-            return;
-        }
-        String group=app.db().groups().iterator().next().getName();
-        int count=0;
-        for (ContactData con: contacts) {
-            if (con.getGroups().size() == 0) {
-                count++;
+            app.group().create(new GroupData().withName(String.format("group%s", g)).withHeader("header").withFooter("footer"));
+            app.goTo().homePage();
+            groupId = app.db().selectGroupWithMaxId().getId();
+            if (contacts.size() == 0) {
+                app.contact().create(new ContactData().withFirstname("Name1").withLastname("LastName1").
+                        withMobilePhone("+78005553535").withEmail("1@mail.com").withMiddlename("Petrovich1").
+                        withAddress("ulica").withEmail2("email2").withEmail3("email3").
+                        withHomePhone("homephone").withWorkPhone("workphone"));
+                contactId = app.db().selectContactWithMaxId().getId();
+                app.goTo().homePage();
+                app.contact().selectContactById(contactId);
+                app.contact().addToGroupById(groupId);
+                contacts = app.db().contacts();
+                contactInGroupIsFound = true;
             }
         }
-        if (count==contacts.size()) {
+        if (contacts.size() == 0 && !contactInGroupIsFound) {
+            app.contact().create(new ContactData().withFirstname("Name1").withLastname("LastName1").
+                    withMobilePhone("+78005553535").withEmail("1@mail.com").withMiddlename("Petrovich1").
+                    withAddress("ulica").withEmail2("email2").withEmail3("email3").
+                    withHomePhone("homephone").withWorkPhone("workphone"));
+            contactId = app.db().selectContactWithMaxId().getId();
+            groupId = app.db().selectGroupWithMaxId().getId();
             app.goTo().homePage();
-            app.contact().addContactToGroup(contact, group);
+            app.contact().selectContactById(contactId);
+            app.contact().addToGroupById(groupId);
+        } else {
+            for (ContactData contact : contacts) {
+                if (contact.getGroups().size() > 0) {
+                    contactId = contact.getId();
+                    groupId = contact.getGroups().iterator().next().getId();
+                    break;
+                }
+            }
         }
-
     }
 
-    @Test
-    public void testContactRemoveFromGroup() {
-        Groups groups = app.db().groups();
-        GroupData removedGroup = groups.iterator().next();// String removedGroupName = removedGroup.getName();
-        int removedGroupId = removedGroup.getId();
-        Contacts before = app.db().contacts();
-        ContactData addedToGroupContact = before.stream().max((o1, o2) -> Integer.compare(o1.getGroups().size(), o2.getGroups().size())).get();
-        for (ContactData c: before) {
-            int i=0;
-            if (c.getGroups().size()>0){
-                addedToGroupContact = c;
-                i++;
-            } if (i>0){
-                break;
-            }
-        }
 
-        Groups beforeGroups = addedToGroupContact.getGroups();
-        app.goTo().homePage();
-        app.contact().removeContactFromGroup(addedToGroupContact, removedGroupId);
-        Contacts after = app.db().contacts();
-        for (ContactData d: after) {
-            if(d.getId()==addedToGroupContact.getId()){
-                addedToGroupContact=d;
-            }
-        }
-        Groups afterGroups = addedToGroupContact.getGroups();
-        assertThat(afterGroups, equalTo((beforeGroups).without(removedGroup)));
+    @Test
+    public void testContactRemovalFromGroup() {
+        Groups before = app.db().selectContactById(contactId).getGroups();
+        app.contact().filterContactsByGroupId(groupId);
+        app.contact().selectContactById(contactId);
+        app.contact().removeContactFromGroup();
+        Groups after = app.db().selectContactById(contactId).getGroups();
+        GroupData group = app.db().selectGroupById(groupId);
+
+        assertThat(after, equalTo(before.without(group)));
     }
 }

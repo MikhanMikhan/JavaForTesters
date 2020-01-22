@@ -12,7 +12,10 @@ import java.util.Random;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+
 public class ContactAddToGroupTest extends TestBase {
+
+    private int contactId;
 
     @BeforeMethod
     public void ensurePreconditions() {
@@ -20,58 +23,39 @@ public class ContactAddToGroupTest extends TestBase {
         int g = random.nextInt();
         Groups groups = app.db().groups();
         Contacts contacts = app.db().contacts();
-        if (contacts.size() == 0) {
-            app.goTo().homePage();
-            app.contact().create(new ContactData().withFirstname("Name").withLastname("LastName").
-                    withMobilePhone("+78005553535").withEmail("1@mail.com").withMiddlename("Petrovich").
-                    withAddress("ulica").withEmail2("email2").withEmail3("email3").
-                    withHomePhone("homephone").withWorkPhone("workphone"));
-        }
-
         if (groups.size() == 0) {
             app.goTo().groupPage();
-            app.group().create(new GroupData().withName(String.format("group%s",g)).withHeader("header").withFooter("footer"));
-            return;
+            app.group().create(new GroupData().withName(String.format("group%s", g)).withHeader("header").withFooter("footer"));
+            app.goTo().homePage();
         }
-        int count=0;
-        for (ContactData contact: contacts) {
-            if (contact.getGroups().size()<groups.size()){
-                count++;
+        if (contacts.size() == 0) {
+            app.contact().create(new ContactData().withFirstname("Name1").withLastname("LastName1").
+                    withMobilePhone("+78005553535").withEmail("1@mail.com").withMiddlename("Petrovich1").
+                    withAddress("ulica").withEmail2("email2").withEmail3("email3").
+                    withHomePhone("homephone").withWorkPhone("workphone"));
+            app.goTo().homePage();
+            contactId = app.db().selectContactWithMaxId().getId();
+        } else {
+            for (ContactData contact : contacts) {
+                if (!contact.getGroups().equals(groups)) {
+                    contactId = contact.getId();
+                    break;
+                }
             }
         }
-        if (count==0) {
-            app.goTo().groupPage();
-            app.group().create(new GroupData().withName(String.format("group%s",g)).withHeader("header").withFooter("footer"));
-        }
-        }
-
+    }
 
     @Test
-    public void testContactAddToGroup() {
-
+    public void testContactAdditionToGroup() {
+        ContactData contact = app.db().selectContactById(contactId);
+        Groups before = contact.getGroups();
+        app.contact().selectContactById(contactId);
         Groups groups = app.db().groups();
-        GroupData addedGroup = new GroupData().withId(groups.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getId()).withName(groups.stream().max((o1, o2) -> Integer.compare(o1.getId(), o2.getId())).get().getName());
-        String addedGroupName = addedGroup.getName();
-        Contacts before = app.db().contacts();
-        ContactData addedToGroupContact = before.stream().min((o1, o2) -> Integer.compare(o1.getGroups().size(), o2.getGroups().size())).get();
-        for (ContactData contact: before) {
-            int i=0;
-            if (contact.getGroups().size()<groups.size()){
-                addedToGroupContact = contact;
-                i++;
-            } if (i>0){
-                break;
-            }
-        }
+        groups.removeAll(contact.getGroups());
+        GroupData group = groups.iterator().next();
+        app.contact().addToGroupById(group.getId());
+        Groups after = app.db().selectContactById(contactId).getGroups();
 
-        Groups beforeGroups = addedToGroupContact.getGroups();
-        app.goTo().homePage();
-        app.contact().addContactToGroup(addedToGroupContact, addedGroupName);
-        Contacts after = app.db().contacts();
-        for (ContactData contact: after) {
-            if(contact.getId()==addedToGroupContact.getId()){
-                addedToGroupContact=contact;
-            }
-        }
-        Groups afterGroups = addedToGroupContact.getGroups();
-        assertThat(afterGroups, equalTo(beforeGroups.withAdded(addedGroup)));}}
+        assertThat(after, equalTo(before.withAdded(group)));
+    }
+}
