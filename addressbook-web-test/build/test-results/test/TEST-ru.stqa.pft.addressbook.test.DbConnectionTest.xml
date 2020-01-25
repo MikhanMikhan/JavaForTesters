@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.test.DbConnectionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-25T05:24:06" hostname="Mikhan-ПК" time="0.013">
+  <properties/>
+  <testcase name="testDbConnection" classname="ru.stqa.pft.addressbook.test.DbConnectionTest" time="0.013"/>
+  <system-out><![CDATA[[GroupData{name='test 0', id=73}, GroupData{name='test 1', id=74}, GroupData{name='test 2', id=75}]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -16,6 +16,8 @@ dependencies {
     implementation 'mysql:mysql-connector-java:8.0.18'
     implementation 'org.hibernate:hibernate-core:5.4.10.Final'    
 }
+test {useTestNG() }
+
 task testGroups(type:Test) {
     useTestNG {
         suites 'src/test/resources/testng-groups.xml'

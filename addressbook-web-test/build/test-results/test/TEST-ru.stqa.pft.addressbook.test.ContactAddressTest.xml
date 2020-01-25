@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.test.ContactAddressTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-01-25T05:23:44" hostname="Mikhan-ПК" time="2.515">
+  <properties/>
+  <testcase name="contactAddressTest" classname="ru.stqa.pft.addressbook.test.ContactAddressTest" time="2.515"/>
+  <system-out><![CDATA[8470 [Test worker] INFO  r.s.pft.addressbook.test.TestBase - Start test contactAddressTestwith parameters [] 
+10985 [Test worker] INFO  r.s.pft.addressbook.test.TestBase - Stop test contactAddressTest 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
