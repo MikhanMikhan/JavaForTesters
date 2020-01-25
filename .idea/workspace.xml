@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="54218cb9-4657-4688-9181-8b2ea4981710" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-test/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-test/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-test/src/test/resources/local.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Sandbox/.gradle/" />
@@ -119,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addressbook-web-test/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="242">
+              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -146,13 +145,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="252">
+              <caret line="51" column="93" selection-start-line="51" selection-start-column="93" selection-end-line="51" selection-end-column="93" />
               <folding>
-                <element signature="e#2364#2365#0" expanded="true" />
-                <element signature="e#2432#2433#0" expanded="true" />
-                <element signature="e#2509#2510#0" expanded="true" />
-                <element signature="e#2583#2584#0" expanded="true" />
+                <element signature="e#2578#2579#0" expanded="true" />
+                <element signature="e#2646#2647#0" expanded="true" />
+                <element signature="e#2723#2724#0" expanded="true" />
+                <element signature="e#2797#2798#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,7 +191,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>de</find>
       <find>group</find>
       <find>withID</find>
       <find>delete</find>
@@ -222,6 +220,7 @@
       <find>com.mysql.jdbc.Driver</find>
       <find>status</find>
       <find>.xml</find>
+      <find>target</find>
     </findStrings>
     <replaceStrings>
       <replace>contact</replace>
@@ -282,15 +281,15 @@
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java" />
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java" />
         <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestTest.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/build.gradle" />
         <option value="$PROJECT_DIR$/Sandbox/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/resources/remote.properties" />
+        <option value="$PROJECT_DIR$/addressbook-web-test/build.gradle" />
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="1260" />
     <option name="height" value="688" />
@@ -606,7 +605,7 @@
     <frame x="-8" y="-8" width="1296" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.4894822" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.22734627" />
       <window_info id="Structure" order="1" sideWeight="0.50121653" side_tool="true" weight="0.25080907" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1523,13 +1522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/resources/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1544,15 +1536,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-test/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="252">
+          <caret line="51" column="93" selection-start-line="51" selection-start-column="93" selection-end-line="51" selection-end-column="93" />
           <folding>
-            <element signature="e#2364#2365#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2583#2584#0" expanded="true" />
+            <element signature="e#2578#2579#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#2723#2724#0" expanded="true" />
+            <element signature="e#2797#2798#0" expanded="true" />
           </folding>
         </state>
       </provider>
