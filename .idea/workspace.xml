@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54218cb9-4657-4688-9181-8b2ea4981710" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-test/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-test/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-test/out/test/classes/ru/stqa/pft/mantis/test/SoapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-test/out/test/classes/ru/stqa/pft/mantis/test/SoapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/SoapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/SoapTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/Sandbox/.gradle/" />
@@ -85,10 +87,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/PasswordChangeTest.java">
+        <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+            <state relative-caret-position="422">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,518 +99,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-sample/build.gradle">
+        <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soap-sample/src/main/resources/geoipservice.wsdl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7616">
-              <caret line="448" column="19" selection-start-line="448" selection-start-column="19" selection-end-line="448" selection-end-column="19" />
+            <state relative-caret-position="218">
+              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
-                <element signature="e#611#615#0" expanded="true" />
-                <element signature="e#616#620#0" expanded="true" />
-                <element signature="e#670#674#0" expanded="true" />
-                <element signature="e#676#680#0" expanded="true" />
-                <element signature="e#7871#7875#0" expanded="true" />
-                <element signature="e#7878#7882#0" expanded="true" />
-                <element signature="e#7955#7959#0" expanded="true" />
-                <element signature="e#7962#7966#0" expanded="true" />
-                <element signature="e#7966#7970#0" expanded="true" />
-                <element signature="e#7973#7977#0" expanded="true" />
-                <element signature="e#8008#8013#0" expanded="true" />
-                <element signature="e#8018#8023#0" expanded="true" />
-                <element signature="e#8028#8033#0" expanded="true" />
-                <element signature="e#8038#8043#0" expanded="true" />
-                <element signature="e#8048#8052#0" expanded="true" />
-                <element signature="e#8053#8057#0" expanded="true" />
-                <element signature="e#8068#8072#0" expanded="true" />
-                <element signature="e#8074#8078#0" expanded="true" />
-                <element signature="e#8078#8082#0" expanded="true" />
-                <element signature="e#8085#8089#0" expanded="true" />
-                <element signature="e#8089#8093#0" expanded="true" />
-                <element signature="e#8096#8100#0" expanded="true" />
-                <element signature="e#8121#8125#0" expanded="true" />
-                <element signature="e#8132#8136#0" expanded="true" />
-                <element signature="e#8136#8140#0" expanded="true" />
-                <element signature="e#8149#8153#0" expanded="true" />
-                <element signature="e#8155#8159#0" expanded="true" />
-                <element signature="e#8169#8173#0" expanded="true" />
-                <element signature="e#8173#8177#0" expanded="true" />
-                <element signature="e#8184#8188#0" expanded="true" />
-                <element signature="e#8190#8194#0" expanded="true" />
-                <element signature="e#8202#8206#0" expanded="true" />
-                <element signature="e#8206#8210#0" expanded="true" />
-                <element signature="e#8218#8222#0" expanded="true" />
-                <element signature="e#8223#8228#0" expanded="true" />
-                <element signature="e#8233#8238#0" expanded="true" />
-                <element signature="e#8243#8248#0" expanded="true" />
-                <element signature="e#8253#8258#0" expanded="true" />
-                <element signature="e#8263#8267#0" expanded="true" />
-                <element signature="e#8268#8272#0" expanded="true" />
-                <element signature="e#8283#8287#0" expanded="true" />
-                <element signature="e#8289#8293#0" expanded="true" />
-                <element signature="e#8593#8597#0" expanded="true" />
-                <element signature="e#8600#8604#0" expanded="true" />
-                <element signature="e#8677#8681#0" expanded="true" />
-                <element signature="e#8684#8688#0" expanded="true" />
-                <element signature="e#8688#8692#0" expanded="true" />
-                <element signature="e#8695#8699#0" expanded="true" />
-                <element signature="e#8730#8735#0" expanded="true" />
-                <element signature="e#8740#8745#0" expanded="true" />
-                <element signature="e#8750#8755#0" expanded="true" />
-                <element signature="e#8760#8765#0" expanded="true" />
-                <element signature="e#8770#8774#0" expanded="true" />
-                <element signature="e#8775#8779#0" expanded="true" />
-                <element signature="e#8790#8794#0" expanded="true" />
-                <element signature="e#8796#8800#0" expanded="true" />
-                <element signature="e#8800#8804#0" expanded="true" />
-                <element signature="e#8807#8811#0" expanded="true" />
-                <element signature="e#8811#8815#0" expanded="true" />
-                <element signature="e#8818#8822#0" expanded="true" />
-                <element signature="e#8843#8847#0" expanded="true" />
-                <element signature="e#8854#8858#0" expanded="true" />
-                <element signature="e#8858#8862#0" expanded="true" />
-                <element signature="e#8871#8875#0" expanded="true" />
-                <element signature="e#8877#8881#0" expanded="true" />
-                <element signature="e#8891#8895#0" expanded="true" />
-                <element signature="e#8895#8899#0" expanded="true" />
-                <element signature="e#8906#8910#0" expanded="true" />
-                <element signature="e#8912#8916#0" expanded="true" />
-                <element signature="e#8924#8928#0" expanded="true" />
-                <element signature="e#8928#8932#0" expanded="true" />
-                <element signature="e#8940#8944#0" expanded="true" />
-                <element signature="e#8945#8950#0" expanded="true" />
-                <element signature="e#8955#8960#0" expanded="true" />
-                <element signature="e#8965#8970#0" expanded="true" />
-                <element signature="e#8975#8980#0" expanded="true" />
-                <element signature="e#8985#8989#0" expanded="true" />
-                <element signature="e#8990#8994#0" expanded="true" />
-                <element signature="e#9005#9009#0" expanded="true" />
-                <element signature="e#9011#9015#0" expanded="true" />
-                <element signature="e#9019#9023#0" expanded="true" />
-                <element signature="e#9024#9028#0" expanded="true" />
-                <element signature="e#9040#9044#0" expanded="true" />
-                <element signature="e#9046#9050#0" expanded="true" />
-                <element signature="e#9353#9357#0" expanded="true" />
-                <element signature="e#9360#9364#0" expanded="true" />
-                <element signature="e#9437#9441#0" expanded="true" />
-                <element signature="e#9444#9448#0" expanded="true" />
-                <element signature="e#9448#9452#0" expanded="true" />
-                <element signature="e#9455#9459#0" expanded="true" />
-                <element signature="e#9490#9495#0" expanded="true" />
-                <element signature="e#9500#9505#0" expanded="true" />
-                <element signature="e#9510#9515#0" expanded="true" />
-                <element signature="e#9520#9525#0" expanded="true" />
-                <element signature="e#9530#9534#0" expanded="true" />
-                <element signature="e#9535#9539#0" expanded="true" />
-                <element signature="e#9550#9554#0" expanded="true" />
-                <element signature="e#9556#9560#0" expanded="true" />
-                <element signature="e#9560#9564#0" expanded="true" />
-                <element signature="e#9567#9571#0" expanded="true" />
-                <element signature="e#9571#9575#0" expanded="true" />
-                <element signature="e#9578#9582#0" expanded="true" />
-                <element signature="e#9603#9607#0" expanded="true" />
-                <element signature="e#9614#9618#0" expanded="true" />
-                <element signature="e#9618#9622#0" expanded="true" />
-                <element signature="e#9631#9635#0" expanded="true" />
-                <element signature="e#9637#9641#0" expanded="true" />
-                <element signature="e#9651#9655#0" expanded="true" />
-                <element signature="e#9655#9659#0" expanded="true" />
-                <element signature="e#9666#9670#0" expanded="true" />
-                <element signature="e#9672#9676#0" expanded="true" />
-                <element signature="e#9684#9688#0" expanded="true" />
-                <element signature="e#9688#9692#0" expanded="true" />
-                <element signature="e#9700#9704#0" expanded="true" />
-                <element signature="e#9705#9710#0" expanded="true" />
-                <element signature="e#9715#9720#0" expanded="true" />
-                <element signature="e#9725#9730#0" expanded="true" />
-                <element signature="e#9735#9740#0" expanded="true" />
-                <element signature="e#9745#9749#0" expanded="true" />
-                <element signature="e#9750#9754#0" expanded="true" />
-                <element signature="e#9765#9769#0" expanded="true" />
-                <element signature="e#9771#9775#0" expanded="true" />
-                <element signature="e#10074#10078#0" expanded="true" />
-                <element signature="e#10081#10085#0" expanded="true" />
-                <element signature="e#10122#10126#0" expanded="true" />
-                <element signature="e#10129#10133#0" expanded="true" />
-                <element signature="e#10156#10161#0" expanded="true" />
-                <element signature="e#10166#10171#0" expanded="true" />
-                <element signature="e#10176#10180#0" expanded="true" />
-                <element signature="e#10181#10185#0" expanded="true" />
-                <element signature="e#10196#10200#0" expanded="true" />
-                <element signature="e#10202#10206#0" expanded="true" />
-                <element signature="e#10523#10527#0" expanded="true" />
-                <element signature="e#10530#10534#0" expanded="true" />
-                <element signature="e#10571#10575#0" expanded="true" />
-                <element signature="e#10578#10582#0" expanded="true" />
-                <element signature="e#10605#10610#0" expanded="true" />
-                <element signature="e#10615#10620#0" expanded="true" />
-                <element signature="e#10625#10629#0" expanded="true" />
-                <element signature="e#10630#10634#0" expanded="true" />
-                <element signature="e#10645#10649#0" expanded="true" />
-                <element signature="e#10651#10655#0" expanded="true" />
-                <element signature="e#10655#10659#0" expanded="true" />
-                <element signature="e#10662#10666#0" expanded="true" />
-                <element signature="e#11093#11097#0" expanded="true" />
-                <element signature="e#11100#11104#0" expanded="true" />
-                <element signature="e#11177#11181#0" expanded="true" />
-                <element signature="e#11184#11188#0" expanded="true" />
-                <element signature="e#11188#11192#0" expanded="true" />
-                <element signature="e#11195#11199#0" expanded="true" />
-                <element signature="e#11230#11235#0" expanded="true" />
-                <element signature="e#11240#11245#0" expanded="true" />
-                <element signature="e#11250#11255#0" expanded="true" />
-                <element signature="e#11260#11265#0" expanded="true" />
-                <element signature="e#11270#11274#0" expanded="true" />
-                <element signature="e#11275#11279#0" expanded="true" />
-                <element signature="e#11290#11294#0" expanded="true" />
-                <element signature="e#11296#11300#0" expanded="true" />
-                <element signature="e#11300#11304#0" expanded="true" />
-                <element signature="e#11307#11311#0" expanded="true" />
-                <element signature="e#11311#11315#0" expanded="true" />
-                <element signature="e#11318#11322#0" expanded="true" />
-                <element signature="e#11343#11347#0" expanded="true" />
-                <element signature="e#11354#11358#0" expanded="true" />
-                <element signature="e#11358#11362#0" expanded="true" />
-                <element signature="e#11371#11375#0" expanded="true" />
-                <element signature="e#11377#11381#0" expanded="true" />
-                <element signature="e#11391#11395#0" expanded="true" />
-                <element signature="e#11395#11399#0" expanded="true" />
-                <element signature="e#11406#11410#0" expanded="true" />
-                <element signature="e#11412#11416#0" expanded="true" />
-                <element signature="e#11424#11428#0" expanded="true" />
-                <element signature="e#11428#11432#0" expanded="true" />
-                <element signature="e#11440#11444#0" expanded="true" />
-                <element signature="e#11445#11450#0" expanded="true" />
-                <element signature="e#11455#11460#0" expanded="true" />
-                <element signature="e#11465#11470#0" expanded="true" />
-                <element signature="e#11475#11480#0" expanded="true" />
-                <element signature="e#11485#11489#0" expanded="true" />
-                <element signature="e#11490#11494#0" expanded="true" />
-                <element signature="e#11505#11509#0" expanded="true" />
-                <element signature="e#11511#11515#0" expanded="true" />
-                <element signature="e#11821#11825#0" expanded="true" />
-                <element signature="e#11828#11832#0" expanded="true" />
-                <element signature="e#11905#11909#0" expanded="true" />
-                <element signature="e#11912#11916#0" expanded="true" />
-                <element signature="e#11916#11920#0" expanded="true" />
-                <element signature="e#11923#11927#0" expanded="true" />
-                <element signature="e#11958#11963#0" expanded="true" />
-                <element signature="e#11968#11973#0" expanded="true" />
-                <element signature="e#11978#11983#0" expanded="true" />
-                <element signature="e#11988#11993#0" expanded="true" />
-                <element signature="e#11998#12002#0" expanded="true" />
-                <element signature="e#12003#12007#0" expanded="true" />
-                <element signature="e#12018#12022#0" expanded="true" />
-                <element signature="e#12024#12028#0" expanded="true" />
-                <element signature="e#12028#12032#0" expanded="true" />
-                <element signature="e#12035#12039#0" expanded="true" />
-                <element signature="e#12039#12043#0" expanded="true" />
-                <element signature="e#12046#12050#0" expanded="true" />
-                <element signature="e#12071#12075#0" expanded="true" />
-                <element signature="e#12082#12086#0" expanded="true" />
-                <element signature="e#12086#12090#0" expanded="true" />
-                <element signature="e#12099#12103#0" expanded="true" />
-                <element signature="e#12105#12109#0" expanded="true" />
-                <element signature="e#12119#12123#0" expanded="true" />
-                <element signature="e#12123#12127#0" expanded="true" />
-                <element signature="e#12134#12138#0" expanded="true" />
-                <element signature="e#12140#12144#0" expanded="true" />
-                <element signature="e#12152#12156#0" expanded="true" />
-                <element signature="e#12156#12160#0" expanded="true" />
-                <element signature="e#12168#12172#0" expanded="true" />
-                <element signature="e#12173#12178#0" expanded="true" />
-                <element signature="e#12183#12188#0" expanded="true" />
-                <element signature="e#12193#12198#0" expanded="true" />
-                <element signature="e#12203#12208#0" expanded="true" />
-                <element signature="e#12213#12217#0" expanded="true" />
-                <element signature="e#12218#12222#0" expanded="true" />
-                <element signature="e#12233#12237#0" expanded="true" />
-                <element signature="e#12239#12243#0" expanded="true" />
-                <element signature="e#12247#12251#0" expanded="true" />
-                <element signature="e#12252#12256#0" expanded="true" />
-                <element signature="e#12268#12272#0" expanded="true" />
-                <element signature="e#12274#12278#0" expanded="true" />
-                <element signature="e#12587#12591#0" expanded="true" />
-                <element signature="e#12594#12598#0" expanded="true" />
-                <element signature="e#12671#12675#0" expanded="true" />
-                <element signature="e#12678#12682#0" expanded="true" />
-                <element signature="e#12682#12686#0" expanded="true" />
-                <element signature="e#12689#12693#0" expanded="true" />
-                <element signature="e#12724#12729#0" expanded="true" />
-                <element signature="e#12734#12739#0" expanded="true" />
-                <element signature="e#12744#12749#0" expanded="true" />
-                <element signature="e#12754#12759#0" expanded="true" />
-                <element signature="e#12764#12768#0" expanded="true" />
-                <element signature="e#12769#12773#0" expanded="true" />
-                <element signature="e#12784#12788#0" expanded="true" />
-                <element signature="e#12790#12794#0" expanded="true" />
-                <element signature="e#12794#12798#0" expanded="true" />
-                <element signature="e#12801#12805#0" expanded="true" />
-                <element signature="e#12805#12809#0" expanded="true" />
-                <element signature="e#12812#12816#0" expanded="true" />
-                <element signature="e#12837#12841#0" expanded="true" />
-                <element signature="e#12848#12852#0" expanded="true" />
-                <element signature="e#12852#12856#0" expanded="true" />
-                <element signature="e#12865#12869#0" expanded="true" />
-                <element signature="e#12871#12875#0" expanded="true" />
-                <element signature="e#12885#12889#0" expanded="true" />
-                <element signature="e#12889#12893#0" expanded="true" />
-                <element signature="e#12900#12904#0" expanded="true" />
-                <element signature="e#12906#12910#0" expanded="true" />
-                <element signature="e#12918#12922#0" expanded="true" />
-                <element signature="e#12922#12926#0" expanded="true" />
-                <element signature="e#12934#12938#0" expanded="true" />
-                <element signature="e#12939#12944#0" expanded="true" />
-                <element signature="e#12949#12954#0" expanded="true" />
-                <element signature="e#12959#12964#0" expanded="true" />
-                <element signature="e#12969#12974#0" expanded="true" />
-                <element signature="e#12979#12983#0" expanded="true" />
-                <element signature="e#12984#12988#0" expanded="true" />
-                <element signature="e#12999#13003#0" expanded="true" />
-                <element signature="e#13005#13009#0" expanded="true" />
-                <element signature="e#13314#13318#0" expanded="true" />
-                <element signature="e#13321#13325#0" expanded="true" />
-                <element signature="e#13362#13366#0" expanded="true" />
-                <element signature="e#13369#13373#0" expanded="true" />
-                <element signature="e#13396#13401#0" expanded="true" />
-                <element signature="e#13406#13411#0" expanded="true" />
-                <element signature="e#13416#13420#0" expanded="true" />
-                <element signature="e#13421#13425#0" expanded="true" />
-                <element signature="e#13436#13440#0" expanded="true" />
-                <element signature="e#13442#13446#0" expanded="true" />
-                <element signature="e#13769#13773#0" expanded="true" />
-                <element signature="e#13776#13780#0" expanded="true" />
-                <element signature="e#13817#13821#0" expanded="true" />
-                <element signature="e#13824#13828#0" expanded="true" />
-                <element signature="e#13851#13856#0" expanded="true" />
-                <element signature="e#13861#13866#0" expanded="true" />
-                <element signature="e#13871#13875#0" expanded="true" />
-                <element signature="e#13876#13880#0" expanded="true" />
-                <element signature="e#13891#13895#0" expanded="true" />
-                <element signature="e#13897#13901#0" expanded="true" />
-                <element signature="e#13901#13905#0" expanded="true" />
-                <element signature="e#13908#13912#0" expanded="true" />
-                <element signature="e#14346#14350#0" expanded="true" />
-                <element signature="e#14353#14357#0" expanded="true" />
-                <element signature="e#14430#14434#0" expanded="true" />
-                <element signature="e#14437#14441#0" expanded="true" />
-                <element signature="e#14441#14445#0" expanded="true" />
-                <element signature="e#14448#14452#0" expanded="true" />
-                <element signature="e#14483#14488#0" expanded="true" />
-                <element signature="e#14493#14498#0" expanded="true" />
-                <element signature="e#14503#14508#0" expanded="true" />
-                <element signature="e#14513#14518#0" expanded="true" />
-                <element signature="e#14523#14527#0" expanded="true" />
-                <element signature="e#14528#14532#0" expanded="true" />
-                <element signature="e#14543#14547#0" expanded="true" />
-                <element signature="e#14549#14553#0" expanded="true" />
-                <element signature="e#14553#14557#0" expanded="true" />
-                <element signature="e#14560#14564#0" expanded="true" />
-                <element signature="e#14564#14568#0" expanded="true" />
-                <element signature="e#14571#14575#0" expanded="true" />
-                <element signature="e#14596#14600#0" expanded="true" />
-                <element signature="e#14607#14611#0" expanded="true" />
-                <element signature="e#14611#14615#0" expanded="true" />
-                <element signature="e#14624#14628#0" expanded="true" />
-                <element signature="e#14630#14634#0" expanded="true" />
-                <element signature="e#14644#14648#0" expanded="true" />
-                <element signature="e#14648#14652#0" expanded="true" />
-                <element signature="e#14659#14663#0" expanded="true" />
-                <element signature="e#14665#14669#0" expanded="true" />
-                <element signature="e#14677#14681#0" expanded="true" />
-                <element signature="e#14681#14685#0" expanded="true" />
-                <element signature="e#14693#14697#0" expanded="true" />
-                <element signature="e#14698#14703#0" expanded="true" />
-                <element signature="e#14708#14713#0" expanded="true" />
-                <element signature="e#14718#14723#0" expanded="true" />
-                <element signature="e#14728#14733#0" expanded="true" />
-                <element signature="e#14738#14742#0" expanded="true" />
-                <element signature="e#14743#14747#0" expanded="true" />
-                <element signature="e#14758#14762#0" expanded="true" />
-                <element signature="e#14764#14768#0" expanded="true" />
-                <element signature="e#15076#15080#0" expanded="true" />
-                <element signature="e#15083#15087#0" expanded="true" />
-                <element signature="e#15160#15164#0" expanded="true" />
-                <element signature="e#15167#15171#0" expanded="true" />
-                <element signature="e#15171#15175#0" expanded="true" />
-                <element signature="e#15178#15182#0" expanded="true" />
-                <element signature="e#15213#15218#0" expanded="true" />
-                <element signature="e#15223#15228#0" expanded="true" />
-                <element signature="e#15233#15238#0" expanded="true" />
-                <element signature="e#15243#15248#0" expanded="true" />
-                <element signature="e#15253#15257#0" expanded="true" />
-                <element signature="e#15258#15262#0" expanded="true" />
-                <element signature="e#15273#15277#0" expanded="true" />
-                <element signature="e#15279#15283#0" expanded="true" />
-                <element signature="e#15283#15287#0" expanded="true" />
-                <element signature="e#15290#15294#0" expanded="true" />
-                <element signature="e#15294#15298#0" expanded="true" />
-                <element signature="e#15301#15305#0" expanded="true" />
-                <element signature="e#15326#15330#0" expanded="true" />
-                <element signature="e#15337#15341#0" expanded="true" />
-                <element signature="e#15341#15345#0" expanded="true" />
-                <element signature="e#15354#15358#0" expanded="true" />
-                <element signature="e#15360#15364#0" expanded="true" />
-                <element signature="e#15374#15378#0" expanded="true" />
-                <element signature="e#15378#15382#0" expanded="true" />
-                <element signature="e#15389#15393#0" expanded="true" />
-                <element signature="e#15395#15399#0" expanded="true" />
-                <element signature="e#15407#15411#0" expanded="true" />
-                <element signature="e#15411#15415#0" expanded="true" />
-                <element signature="e#15423#15427#0" expanded="true" />
-                <element signature="e#15428#15433#0" expanded="true" />
-                <element signature="e#15438#15443#0" expanded="true" />
-                <element signature="e#15448#15453#0" expanded="true" />
-                <element signature="e#15458#15463#0" expanded="true" />
-                <element signature="e#15468#15472#0" expanded="true" />
-                <element signature="e#15473#15477#0" expanded="true" />
-                <element signature="e#15488#15492#0" expanded="true" />
-                <element signature="e#15494#15498#0" expanded="true" />
-                <element signature="e#15502#15506#0" expanded="true" />
-                <element signature="e#15507#15511#0" expanded="true" />
-                <element signature="e#15523#15527#0" expanded="true" />
-                <element signature="e#15529#15533#0" expanded="true" />
-                <element signature="e#15844#15848#0" expanded="true" />
-                <element signature="e#15851#15855#0" expanded="true" />
-                <element signature="e#15928#15932#0" expanded="true" />
-                <element signature="e#15935#15939#0" expanded="true" />
-                <element signature="e#15939#15943#0" expanded="true" />
-                <element signature="e#15946#15950#0" expanded="true" />
-                <element signature="e#15981#15986#0" expanded="true" />
-                <element signature="e#15991#15996#0" expanded="true" />
-                <element signature="e#16001#16006#0" expanded="true" />
-                <element signature="e#16011#16016#0" expanded="true" />
-                <element signature="e#16021#16025#0" expanded="true" />
-                <element signature="e#16026#16030#0" expanded="true" />
-                <element signature="e#16041#16045#0" expanded="true" />
-                <element signature="e#16047#16051#0" expanded="true" />
-                <element signature="e#16051#16055#0" expanded="true" />
-                <element signature="e#16058#16062#0" expanded="true" />
-                <element signature="e#16062#16066#0" expanded="true" />
-                <element signature="e#16069#16073#0" expanded="true" />
-                <element signature="e#16094#16098#0" expanded="true" />
-                <element signature="e#16105#16109#0" expanded="true" />
-                <element signature="e#16109#16113#0" expanded="true" />
-                <element signature="e#16122#16126#0" expanded="true" />
-                <element signature="e#16128#16132#0" expanded="true" />
-                <element signature="e#16142#16146#0" expanded="true" />
-                <element signature="e#16146#16150#0" expanded="true" />
-                <element signature="e#16157#16161#0" expanded="true" />
-                <element signature="e#16163#16167#0" expanded="true" />
-                <element signature="e#16175#16179#0" expanded="true" />
-                <element signature="e#16179#16183#0" expanded="true" />
-                <element signature="e#16191#16195#0" expanded="true" />
-                <element signature="e#16196#16201#0" expanded="true" />
-                <element signature="e#16206#16211#0" expanded="true" />
-                <element signature="e#16216#16221#0" expanded="true" />
-                <element signature="e#16226#16231#0" expanded="true" />
-                <element signature="e#16236#16240#0" expanded="true" />
-                <element signature="e#16241#16245#0" expanded="true" />
-                <element signature="e#16256#16260#0" expanded="true" />
-                <element signature="e#16262#16266#0" expanded="true" />
-                <element signature="e#16573#16577#0" expanded="true" />
-                <element signature="e#16580#16584#0" expanded="true" />
-                <element signature="e#16621#16625#0" expanded="true" />
-                <element signature="e#16628#16632#0" expanded="true" />
-                <element signature="e#16655#16660#0" expanded="true" />
-                <element signature="e#16665#16670#0" expanded="true" />
-                <element signature="e#16675#16679#0" expanded="true" />
-                <element signature="e#16680#16684#0" expanded="true" />
-                <element signature="e#16695#16699#0" expanded="true" />
-                <element signature="e#16701#16705#0" expanded="true" />
-                <element signature="e#17030#17034#0" expanded="true" />
-                <element signature="e#17037#17041#0" expanded="true" />
-                <element signature="e#17078#17082#0" expanded="true" />
-                <element signature="e#17085#17089#0" expanded="true" />
-                <element signature="e#17112#17117#0" expanded="true" />
-                <element signature="e#17122#17127#0" expanded="true" />
-                <element signature="e#17132#17136#0" expanded="true" />
-                <element signature="e#17137#17141#0" expanded="true" />
-                <element signature="e#17152#17156#0" expanded="true" />
-                <element signature="e#17158#17162#0" expanded="true" />
-                <element signature="e#17162#17166#0" expanded="true" />
-                <element signature="e#17169#17173#0" expanded="true" />
-                <element signature="e#25231#25235#0" expanded="true" />
-                <element signature="e#25236#25240#0" expanded="true" />
-                <element signature="e#25290#25294#0" expanded="true" />
-                <element signature="e#25296#25300#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soap-sample/gradlew">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/soap-sample/gradlew.bat">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-717">
+              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/soap-sample/build.gradle">
+        <entry file="file://$PROJECT_DIR$/Sandbox/src/test/java/PointTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rest-sample/gradlew">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/PasswordChangeHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-              <folding>
-                <element signature="e#184#185#0" expanded="true" />
-                <element signature="e#210#211#0" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#519#520#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/TestBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -624,8 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id</find>
-      <find>getId</find>
       <find>de</find>
       <find>group</find>
       <find>withID</find>
@@ -654,6 +171,8 @@
       <find>заре</find>
       <find>src/test/resources</find>
       <find>com.mysql.jdbc.Driver</find>
+      <find>status</find>
+      <find>.xml</find>
     </findStrings>
     <replaceStrings>
       <replace>contact</replace>
@@ -668,18 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/DbConnectionTest.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/build.gradle" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/model/Contacts.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/HbConnectionTest.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/GroupModificationTest.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/model/Groups.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/GroupDeletionTest.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/GroupCreationTest.java" />
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/ContactCreationTest.java" />
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/TestBase.java" />
         <option value="$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/ContactDeletionTest.java" />
@@ -702,15 +209,12 @@
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/DbHelper.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/HelperBase.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/MailHelper.java" />
-        <option value="$PROJECT_DIR$/mantis-test/build.gradle" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/NavigationHelper.java" />
-        <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/model/Project.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/model/Issue.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/resources/local.properties" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/resources/hibernate.cfg.xml" />
-        <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/SoapTest.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/PasswordChangeTest.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/PasswordChangeHelper.java" />
         <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/TestBase.java" />
@@ -719,6 +223,21 @@
         <option value="$PROJECT_DIR$/rest-sample/build.gradle" />
         <option value="$PROJECT_DIR$/soap-sample/src/main/resources/geoipservice.wsdl" />
         <option value="$PROJECT_DIR$/soap-sample/build.gradle" />
+        <option value="$PROJECT_DIR$/soap-sample/src/test/java/ru/stqa/pft/soap/SoapTest.java" />
+        <option value="$PROJECT_DIR$/mantis-test/build.gradle" />
+        <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java" />
+        <option value="$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/SoapTest.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/КуыеЕуые.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/Model/Issue.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/ApplicationManager/ApplicationHelper.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/ApplicationManager/RestHelper.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/ApplicationHelper.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/AppManager.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/RestHelper.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java" />
+        <option value="$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestTest.java" />
       </list>
     </option>
   </component>
@@ -735,30 +254,45 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soap-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="addressbook-web-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soap-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mantis-test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
-              <item name="soap-sample" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sandbox" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -772,6 +306,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javafortesters\JavaForTesters\soap-sample" />
       <recent name="D:\javafortesters\JavaForTesters\mantis-test\src\test\resources" />
       <recent name="D:\javafortesters\JavaForTesters\addressbook-web-test\src\test\resources" />
     </key>
@@ -796,17 +331,36 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PasswordChangeTest.passwordChangeTest">
-    <configuration name="PasswordChangeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-test.test" />
+  <component name="RunManager" selected="Gradle.addressbook-web-test [testContactss]">
+    <configuration name="addressbook-web-test [testContactss]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-test" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="testContactss" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactAddressTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-test.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.test.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.test.PasswordChangeTest" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactAddressTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -814,34 +368,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordChangeTest.passwordChangeTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-test.test" />
+    <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-test.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.test.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.test.PasswordChangeTest" />
-      <option name="METHOD_NAME" value="passwordChangeTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-test.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.test.RegistrationTest" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.test" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.test.ContactModificationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -849,36 +385,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.testRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-test.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.test.RegistrationTest" />
-      <option name="METHOD_NAME" value="testRegistration" />
-      <option name="TEST_OBJECT" value="METHOD" />
+    <configuration name="PointTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PointTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoapTest.testGetProjects" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-test.test" />
+    <configuration name="RestTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-sample.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.test.*" />
+          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.test" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.test.SoapTest" />
-      <option name="METHOD_NAME" value="testGetProjects" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -886,19 +414,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.RegistrationTest.testRegistration" />
-      <item itemvalue="TestNG.SoapTest.testGetProjects" />
-      <item itemvalue="TestNG.PasswordChangeTest" />
-      <item itemvalue="TestNG.PasswordChangeTest.passwordChangeTest" />
-      <item itemvalue="TestNG.RegistrationTest" />
+      <item itemvalue="TestNG.RestTest" />
+      <item itemvalue="TestNG.PointTest" />
+      <item itemvalue="TestNG.ContactAddressTest" />
+      <item itemvalue="TestNG.ContactModificationTest" />
+      <item itemvalue="Gradle.addressbook-web-test [testContactss]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PasswordChangeTest.passwordChangeTest" />
-        <item itemvalue="TestNG.RegistrationTest.testRegistration" />
-        <item itemvalue="TestNG.RegistrationTest" />
-        <item itemvalue="TestNG.PasswordChangeTest" />
-        <item itemvalue="TestNG.SoapTest.testGetProjects" />
+        <item itemvalue="Gradle.addressbook-web-test [testContactss]" />
+        <item itemvalue="TestNG.ContactModificationTest" />
+        <item itemvalue="TestNG.ContactAddressTest" />
+        <item itemvalue="TestNG.PointTest" />
+        <item itemvalue="TestNG.RestTest" />
       </list>
     </recent_temporary>
   </component>
@@ -916,35 +444,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PasswordChangeTest_passwordChangeTest - 2020.01.22 at 09h 11m 16s.xml">
+    <history-entry file="SoapTest_testGetProjects - 2020.01.23 at 22h 15m 08s.xml">
+      <configuration name="SoapTest.testGetProjects" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PasswordChangeTest_passwordChangeTest - 2020.01.23 at 22h 46m 19s.xml">
       <configuration name="PasswordChangeTest.passwordChangeTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_testRegistration - 2020.01.22 at 09h 11m 41s.xml">
-      <configuration name="RegistrationTest.testRegistration" configurationId="TestNG" />
+    <history-entry file="RestTest - 2020.01.24 at 09h 02m 25s.xml">
+      <configuration name="RestTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_testRegistration - 2020.01.22 at 09h 12m 51s.xml">
-      <configuration name="RegistrationTest.testRegistration" configurationId="TestNG" />
+    <history-entry file="RestTest - 2020.01.24 at 09h 04m 03s.xml">
+      <configuration name="RestTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_testRegistration - 2020.01.22 at 09h 15m 34s.xml">
-      <configuration name="RegistrationTest.testRegistration" configurationId="TestNG" />
+    <history-entry file="RestTest - 2020.01.24 at 09h 04m 38s.xml">
+      <configuration name="RestTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_testRegistration - 2020.01.22 at 09h 16m 06s.xml">
-      <configuration name="RegistrationTest.testRegistration" configurationId="TestNG" />
+    <history-entry file="RestTest - 2020.01.24 at 09h 05m 12s.xml">
+      <configuration name="RestTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_testRegistration - 2020.01.22 at 09h 19m 16s.xml">
-      <configuration name="RegistrationTest.testRegistration" configurationId="TestNG" />
+    <history-entry file="RestTest - 2020.01.24 at 09h 06m 36s.xml">
+      <configuration name="RestTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_testRegistration - 2020.01.22 at 09h 19m 37s.xml">
-      <configuration name="RegistrationTest.testRegistration" configurationId="TestNG" />
+    <history-entry file="RestTest - 2020.01.24 at 09h 09m 46s.xml">
+      <configuration name="RestTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="RegistrationTest_testRegistration - 2020.01.22 at 09h 20m 43s.xml">
-      <configuration name="RegistrationTest.testRegistration" configurationId="TestNG" />
+    <history-entry file="RestTest - 2020.01.24 at 09h 09m 59s.xml">
+      <configuration name="RestTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PasswordChangeTest_passwordChangeTest - 2020.01.22 at 09h 21m 36s.xml">
-      <configuration name="PasswordChangeTest.passwordChangeTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PasswordChangeTest_passwordChangeTest - 2020.01.22 at 09h 22m 16s.xml">
-      <configuration name="PasswordChangeTest.passwordChangeTest" configurationId="TestNG" />
+    <history-entry file="PointTest - 2020.01.25 at 11h 53m 02s.xml">
+      <configuration name="PointTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -958,9 +486,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.4182848" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49878347" visible="true" weight="0.21440129" />
       <window_info id="Structure" order="1" sideWeight="0.50121653" side_tool="true" weight="0.25080907" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -969,14 +496,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49919093" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4959547" weight="0.34313726" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4959547" visible="true" weight="0.34313726" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.42973855" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49919093" weight="0.32843137" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49919093" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5040453" side_tool="true" weight="0.35457516" />
-      <window_info anchor="bottom" id="Build" order="9" visible="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Build" order="9" weight="0.32843137" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49838188" weight="0.32843137" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1005,94 +532,16 @@
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/soap-sample/src/test/java/ru/stqa/pft/soap/SoapTest.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="384" column="12" selection-start-line="384" selection-start-column="12" selection-end-line="384" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1066">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/ContactModificationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="17" column="74" selection-start-line="14" selection-start-column="25" selection-end-line="17" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/DbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="186" column="7" selection-start-line="186" selection-start-column="7" selection-end-line="186" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#3257#3258#0" expanded="true" />
-            <element signature="e#3340#3341#0" expanded="true" />
-            <element signature="e#7138#7139#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/GroupModificationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="20" column="59" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/ContactPhoneTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/ContactDeletionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="75" selection-start-line="13" selection-start-column="11" selection-end-line="17" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-test/src/test/java/ru/stqa/pft/addressbook/test/ContactCreationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1199,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-test/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mantis-test/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1284,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/resources/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1318,13 +753,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-test/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="28" column="1" selection-start-line="18" selection-end-line="28" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1389,16 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/SoapTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/MailHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -1422,16 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/PasswordChangeHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
@@ -1449,37 +857,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/PasswordChangeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rest-sample/gradlew">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rest-sample/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/soap-sample/src/main/resources/geoipservice.wsdl">
       <provider selected="true" editor-type-id="text-editor">
@@ -1926,8 +1305,154 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/soap-sample/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="646">
           <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/SoapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soap-sample/src/test/java/ru/stqa/pft/soap/SoapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-start-column="2" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-test/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="73" selection-start-line="19" selection-start-column="73" selection-end-line="19" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-test/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/PasswordChangeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/RestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/AppManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/appmanager/RestHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#1531#1532#0" expanded="true" />
+            <element signature="e#1621#1622#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.10/fa7502ae129b9073f57cfdf7a25f11c9b0270fae/testng-6.10-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="658" selection-start-line="658" selection-end-line="658" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mantis-test/src/test/java/ru/stqa/pft/mantis/test/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rest-sample/src/test/java/ru/stqa/pft/rest/model/Issue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-717">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sandbox/src/test/java/PointTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
