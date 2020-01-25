@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PointTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-01-25T05:30:29" hostname="Mikhan-ПК" time="0.021">
+  <properties/>
+  <testcase name="testArea1" classname="PointTest" time="0.016"/>
+  <testcase name="testArea2" classname="PointTest" time="0.0"/>
+  <testcase name="testArea3" classname="PointTest" time="0.0"/>
+  <testcase name="testArea4" classname="PointTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
