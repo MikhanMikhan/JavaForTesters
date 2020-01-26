@@ -34,7 +34,7 @@ public class PasswordChangeTest extends TestBase {
         app.goTo().login(app.getProperty("web.adminLogin"), app.getProperty("web.adminPassword"));
         app.passwordChange().resetPassByUserId(user.getId());
         app.goTo().logout();
-        List<MailMessage> mailMessages = app.james().waitForMail(user.getUsername(), mailPassword, 50000);
+        List<MailMessage> mailMessages = app.james().waitForMail(user.getUsername(), mailPassword, 60000);
         String resetPassLink = findResetPassLink(mailMessages);
         app.registration().finish(resetPassLink, newPassword);
         assertTrue(app.newSession().login(user.getUsername(), newPassword));

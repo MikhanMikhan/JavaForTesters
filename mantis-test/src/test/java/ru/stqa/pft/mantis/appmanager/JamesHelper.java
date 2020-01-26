@@ -54,8 +54,8 @@ public class JamesHelper {
     private void initTelnetSession() {
         mailserver = app.getProperty("mailserver.host");
         int port = Integer.parseInt(app.getProperty("mailserver.port"));
-        String login = app.getProperty("mailserver.adminlogin");
-        String password = app.getProperty("mailserver.adminpassword");
+        String login = app.getProperty("mailserver.adminLogin");
+        String password = app.getProperty("mailserver.adminPassword");
 
         try {
             telnet.connect(mailserver, port);
@@ -129,7 +129,7 @@ public class JamesHelper {
                 return allMail;
             }
             try {
-                Thread.sleep(1000);
+                Thread.sleep(6000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -1,5 +1,6 @@
 package ru.stqa.pft.mantis.appmanager;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -128,9 +129,9 @@ public class ApplicationManager {
                 wd = new InternetExplorerDriver();
             }
             wd.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
+            wd.manage().window().setSize(new Dimension(1296, 744));
             wd.get(properties.getProperty("web.baseUrl", "http://localhost/addressbook/"));
-
         }
-        return wd;
+         return wd;
     }
 }

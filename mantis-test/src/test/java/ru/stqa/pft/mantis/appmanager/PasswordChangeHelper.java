@@ -9,7 +9,6 @@ public class PasswordChangeHelper extends HelperBase {
     }
 
     public void resetPassByUserId(int id) {
-        toggleMenu();
         openManageTab();
         openManageUsersPage();
         chooseUserById(id);
@@ -32,7 +31,4 @@ public class PasswordChangeHelper extends HelperBase {
         click(By.cssSelector("input[value='Reset Password']"));
     }
 
-    public void toggleMenu() {
-        click(By.cssSelector("button[id='menu-toggler']"));
-    }
 }

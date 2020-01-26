@@ -11,11 +11,11 @@ import java.util.Set;
 
 import static org.testng.Assert.assertEquals;
 
-public class SoapTest extends TestBase{
+public class SoapTest extends TestBase {
 
     @Test
     public void testGetProjects() throws MalformedURLException, ServiceException, RemoteException {
-//        skipIfNotFixed(1);
+        skipIfNotFixed(2);
         Set<Project> projects = app.soap().getProjects();
         System.out.println(projects.size());
         for (Project project : projects) {
