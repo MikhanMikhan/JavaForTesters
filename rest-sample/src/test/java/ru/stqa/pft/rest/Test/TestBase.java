@@ -1,14 +1,13 @@
-package ru.stqa.pft.rest;
+package ru.stqa.pft.rest.Test;
 
 import org.testng.SkipException;
 import ru.stqa.pft.rest.appmanager.AppManager;
-import ru.stqa.pft.rest.model.Issue;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
+
 
 public class TestBase {
 
