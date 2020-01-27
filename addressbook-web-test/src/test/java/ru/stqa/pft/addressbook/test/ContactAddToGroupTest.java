@@ -41,6 +41,15 @@ public class ContactAddToGroupTest extends TestBase {
                     contactId = contact.getId();
                     break;
                 }
+
+            }
+            if (contactId == 0) {
+                app.contact().create(new ContactData().withFirstname("Name1").withLastname("LastName1").
+                        withMobilePhone("+78005553535").withEmail("1@mail.com").withMiddlename("Petrovich1").
+                        withAddress("ulica").withEmail2("email2").withEmail3("email3").
+                        withHomePhone("homephone").withWorkPhone("workphone"));
+                app.goTo().homePage();
+                contactId = app.db().selectContactWithMaxId().getId();
             }
         }
     }

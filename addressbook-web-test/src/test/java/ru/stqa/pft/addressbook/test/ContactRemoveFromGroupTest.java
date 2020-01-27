@@ -60,6 +60,12 @@ public class ContactRemoveFromGroupTest extends TestBase {
                     break;
                 }
             }
+            if (groupId == 0) {
+                contactId = app.db().selectContactWithMaxId().getId();
+                groupId = app.db().selectGroupWithMaxId().getId();
+                app.contact().selectContactById(contactId);
+                app.contact().addToGroupById(groupId);
+            }
         }
     }
 
